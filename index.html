@@ -1,371 +1,736 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Geormy Brylle Cruz Abalos | Portfolio</title>
 
     <meta
-        name="description"
-        content="Portfolio of Geormy Brylle Cruz Abalos, a fourth-year BSIT student majoring in Business Informatics."
-    >
+      name="description"
+      content="Portfolio of Geormy Brylle Cruz Abalos, a fourth-year BSIT student majoring in Business Informatics."
+    />
 
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-    >
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- =====================================================
          PAGE LOADER
     ====================================================== -->
 
     <div class="page-loader" id="pageLoader">
-        <div class="loader-content">
-            <span class="loader-mark">GB</span>
-            <span class="loader-line"></span>
-        </div>
+      <div class="loader-content">
+        <span class="loader-mark">GB</span>
+        <span class="loader-line"></span>
+      </div>
     </div>
-
 
     <!-- =====================================================
          SIDEBAR
     ====================================================== -->
 
     <aside class="sidebar" id="sidebar">
+      <!-- Branding -->
 
-        <!-- Branding -->
+      <div class="sidebar-top">
+        <a href="#home" class="brand" aria-label="Go to home">
+          <span class="brand-mark">GB</span>
+        </a>
 
-        <div class="sidebar-top">
+        <button
+          class="mobile-close"
+          id="mobileClose"
+          type="button"
+          aria-label="Close navigation"
+        >
+          ×
+        </button>
+      </div>
 
-            <a href="#home" class="brand" aria-label="Go to home">
-                <span class="brand-mark">GB</span>
-            </a>
+      <!-- Navigation -->
 
-            <button
-                class="mobile-close"
-                id="mobileClose"
-                type="button"
-                aria-label="Close navigation"
-            >
-                ×
-            </button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#home" class="nav-link active">
+          <span class="nav-number">01</span>
+          <span class="nav-label">Home</span>
+        </a>
 
+        <a href="#about" class="nav-link">
+          <span class="nav-number">02</span>
+          <span class="nav-label">About</span>
+        </a>
+
+        <a href="#skills" class="nav-link">
+          <span class="nav-number">03</span>
+          <span class="nav-label">Skills</span>
+        </a>
+
+        <a href="#projects" class="nav-link">
+          <span class="nav-number">04</span>
+          <span class="nav-label">Projects</span>
+        </a>
+
+        <a href="#experience" class="nav-link">
+          <span class="nav-number">05</span>
+          <span class="nav-label">Project Experience</span>
+        </a>
+
+        <a href="#contact" class="nav-link">
+          <span class="nav-number">06</span>
+          <span class="nav-label">Contact</span>
+        </a>
+      </nav>
+
+      <!-- Sidebar Bottom -->
+
+      <div class="sidebar-bottom">
+        <span class="sidebar-caption"> LET'S CONNECT </span>
+
+        <div class="social-links">
+          <a
+            href="https://github.com/iM-Brylle"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            GH
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/ageormybrylle/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            IN
+          </a>
         </div>
 
-
-        <!-- Navigation -->
-
-        <nav class="main-nav" aria-label="Main navigation">
-
-            <a href="#home" class="nav-link active">
-                <span class="nav-number">01</span>
-                <span class="nav-label">Home</span>
-            </a>
-
-            <a href="#about" class="nav-link">
-                <span class="nav-number">02</span>
-                <span class="nav-label">About</span>
-            </a>
-
-            <a href="#skills" class="nav-link">
-                <span class="nav-number">03</span>
-                <span class="nav-label">Skills</span>
-            </a>
-
-            <a href="#projects" class="nav-link">
-                <span class="nav-number">04</span>
-                <span class="nav-label">Projects</span>
-            </a>
-
-            <a href="#experience" class="nav-link">
-                <span class="nav-number">05</span>
-                <span class="nav-label">Experience</span>
-            </a>
-
-            <a href="#contact" class="nav-link">
-                <span class="nav-number">06</span>
-                <span class="nav-label">Contact</span>
-            </a>
-
-        </nav>
-
-
-        <!-- Sidebar Bottom -->
-
-        <div class="sidebar-bottom">
-
-            <span class="sidebar-caption">
-                LET'S CONNECT
-            </span>
-
-            <div class="social-links">
-
-                <a
-                    href="https://github.com/iM-Brylle"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub"
-                >
-                    GH
-                </a>
-
-                <a
-                    href="https://www.linkedin.com/in/ageormybrylle/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn"
-                >
-                    IN
-                </a>
-
-            </div>
-
-            <span class="sidebar-year">
-                © 2026
-            </span>
-
-        </div>
-
+        <span class="sidebar-year"> © 2026 </span>
+      </div>
     </aside>
-
 
     <!-- =====================================================
          MOBILE MENU BUTTON
     ====================================================== -->
 
     <button
-        class="mobile-menu"
-        id="mobileMenu"
-        type="button"
-        aria-label="Open navigation"
+      class="mobile-menu"
+      id="mobileMenu"
+      type="button"
+      aria-label="Open navigation"
     >
-        <span></span>
-        <span></span>
+      <span></span>
+      <span></span>
     </button>
-
 
     <!-- =====================================================
          MAIN CONTENT
     ====================================================== -->
 
     <main class="main-content">
-
-
-        <!-- =================================================
+      <!-- =================================================
              HERO
         ================================================== -->
 
-        <section class="hero section" id="home">
+      <section class="hero section" id="home">
+        <!-- Decorative background -->
 
-            <!-- Decorative background -->
+        <div class="hero-grid"></div>
 
-            <div class="hero-grid"></div>
+        <div class="hero-noise"></div>
 
-            <div class="hero-noise"></div>
+        <div class="hero-content">
+          <!-- Small introduction -->
 
+          <div class="hero-eyebrow reveal">
+            <span class="eyebrow-line"></span>
 
-            <div class="hero-content">
+            <span>
+              BSIT STUDENT
+              <span class="eyebrow-dot">•</span>
+              BUSINESS INFORMATICS
+            </span>
+          </div>
 
-                <!-- Small introduction -->
+          <!-- Main heading -->
 
-                <div class="hero-eyebrow reveal">
-                    <span class="eyebrow-line"></span>
+          <h1 class="hero-title reveal">
+            <span class="title-small">HELLO, I'M</span>
 
-                    <span>
-                        BSIT STUDENT
-                        <span class="eyebrow-dot">•</span>
-                        BUSINESS INFORMATICS
-                    </span>
-                </div>
+            <span class="title-main"> GEORMY </span>
 
+            <span class="title-main title-outline"> BRYLLE ABALOS </span>
+          </h1>
 
-                <!-- Main heading -->
+          <!-- Description -->
 
-                <h1 class="hero-title reveal">
+          <p class="hero-description reveal">
+            A fourth-year BSIT student majoring in Business Informatics,
+            passionate about building practical digital solutions through web
+            development, application development, and technology.
+          </p>
 
-                    <span class="title-small">HELLO, I'M</span>
+          <!-- CTA -->
 
-                    <span class="title-main">
-                        GEORMY
-                    </span>
+          <div class="hero-actions reveal">
+            <a href="#projects" class="button button-primary">
+              <span>VIEW MY WORK</span>
+              <span class="button-arrow">↗</span>
+            </a>
 
-                    <span class="title-main title-outline">
-                        BRYLLE ABALOS
-                    </span>
+            <a
+              href="assets/cv/Geormy-Abalos-CV.pdf"
+              class="button button-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>DOWNLOAD CV</span>
+              <span class="button-arrow">↓</span>
+            </a>
+          </div>
 
-                </h1>
+          <!-- Current focus -->
 
+          <div class="hero-meta reveal">
+            <span class="meta-label"> CURRENTLY </span>
 
-                <!-- Description -->
-
-                <p class="hero-description reveal">
-                    A fourth-year BSIT student majoring in Business Informatics,
-                    passionate about building practical digital solutions through
-                    web development, application development, and technology.
-                </p>
-
-
-                <!-- CTA -->
-
-                <div class="hero-actions reveal">
-
-                    <a href="#projects" class="button button-primary">
-                        <span>VIEW MY WORK</span>
-                        <span class="button-arrow">↗</span>
-                    </a>
-
-                    <a
-                        href="assets/cv/Geormy-Abalos-CV.pdf"
-                        class="button button-secondary"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <span>DOWNLOAD CV</span>
-                        <span class="button-arrow">↓</span>
-                    </a>
-
-                </div>
-
-
-                <!-- Current focus -->
-
-                <div class="hero-meta reveal">
-
-                    <span class="meta-label">
-                        CURRENTLY
-                    </span>
-
-                    <div class="meta-items">
-
-                        <span>LEARNING</span>
-                        <span>BUILDING</span>
-                        <span>CREATING</span>
-
-                    </div>
-
-                </div>
-
+            <div class="meta-items">
+              <span>LEARNING</span>
+              <span>BUILDING</span>
+              <span>CREATING</span>
             </div>
+          </div>
+        </div>
 
-
-            <!-- =================================================
+        <!-- =================================================
                  HERO VISUAL
             ================================================== -->
 
-            <div class="hero-visual reveal">
-
-                <div class="portrait-frame">
-
-                    <div class="portrait-placeholder">
-
-                        <span class="portrait-initials">
-                            GB
-                        </span>
-
-                        <span class="portrait-label">
-                            PROFILE
-                        </span>
-
-                    </div>
-
-                    <div class="portrait-border"></div>
-
-                </div>
-
-
-                <!-- Floating information -->
-
-                <div class="hero-card hero-card-top">
-
-                    <span class="card-number">
-                        01
-                    </span>
-
-                    <span class="card-text">
-                        BUILDING<br>
-                        DIGITAL<br>
-                        SOLUTIONS
-                    </span>
-
-                </div>
-
-
-                <div class="hero-card hero-card-bottom">
-
-                    <span class="card-label">
-                        BASED IN
-                    </span>
-
-                    <span class="card-value">
-                        PHILIPPINES
-                    </span>
-
-                </div>
-
+        <div class="hero-visual reveal">
+          <div class="portrait-frame">
+            <div class="portrait-placeholder">
+              <img
+                src="images/profile/Profile.jpg"
+                alt="Geormy Brylle Cruz Abalos"
+                class="portrait-image"
+              />
             </div>
 
+            <div class="portrait-border"></div>
+          </div>
 
-            <!-- Scroll indicator -->
+          <!-- Floating information -->
 
-            <a href="#about" class="scroll-indicator">
+          <div class="hero-card hero-card-top">
+            <span class="card-number"> 01 </span>
 
-                <span class="scroll-text">
-                    SCROLL TO EXPLORE
-                </span>
+            <span class="card-text">
+              BUILDING<br />
+              DIGITAL<br />
+              SOLUTIONS
+            </span>
+          </div>
 
-                <span class="scroll-line"></span>
+          <div class="hero-card hero-card-bottom">
+            <span class="card-label"> BASED IN </span>
 
+            <span class="card-value"> PHILIPPINES </span>
+          </div>
+        </div>
+
+        <!-- Scroll indicator -->
+
+        <a href="#about" class="scroll-indicator">
+          <span class="scroll-text"> SCROLL TO EXPLORE </span>
+
+          <span class="scroll-line"></span>
+        </a>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="section-header">
+          <span class="section-number">02</span>
+          <span class="section-label">ABOUT ME</span>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-main">
+            <p class="about-intro">
+              I’m a fourth-year BSIT student majoring in
+              <span>Business Informatics</span>, interested in building
+              practical digital solutions through technology.
+            </p>
+
+            <div class="about-text">
+              <p>
+                My experience includes web development, application development,
+                interface design, and working with different technologies
+                through academic and personal projects.
+              </p>
+
+              <p>
+                Through different projects, I’ve developed my ability to turn
+                ideas into functional digital experiences while continuously
+                improving my technical skills, problem-solving, and approach to
+                software development.
+              </p>
+            </div>
+          </div>
+
+          <aside class="about-details">
+            <div class="about-detail">
+              <span class="detail-number">01</span>
+              <div>
+                <span class="detail-label">EDUCATION</span>
+                <strong>BS INFORMATION TECHNOLOGY</strong>
+                <small>Business Informatics</small>
+              </div>
+            </div>
+
+            <div class="about-detail">
+              <span class="detail-number">02</span>
+              <div>
+                <span class="detail-label">FOCUS</span>
+                <strong>WEB DEVELOPMENT</strong>
+                <small>Application Development</small>
+              </div>
+            </div>
+
+            <div class="about-detail">
+              <span class="detail-number">03</span>
+              <div>
+                <span class="detail-label">APPROACH</span>
+                <strong>BUILD · DESIGN · IMPROVE</strong>
+                <small>Continuously developing my skills</small>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="skills-section" id="skills">
+        <div class="section-header">
+          <span class="section-number">03</span>
+          <span class="section-label">SKILLS</span>
+        </div>
+
+        <div class="skills-content">
+          <!-- Technical Skills -->
+          <div class="skills-group">
+            <div class="skills-group-header">
+              <span class="skills-group-number">01</span>
+              <span class="skills-group-label">TECHNICAL SKILLS</span>
+            </div>
+
+            <div class="skills-list">
+              <span>WEB DEVELOPMENT</span>
+              <span>APPLICATION DEVELOPMENT</span>
+              <span>FRONTEND DEVELOPMENT</span>
+              <span>UI / UX DESIGN</span>
+              <span>RESPONSIVE DESIGN</span>
+              <span>SOFTWARE DEVELOPMENT</span>
+            </div>
+          </div>
+
+          <!-- Programming & Tools -->
+          <div class="skills-group">
+            <div class="skills-group-header">
+              <span class="skills-group-number">02</span>
+              <span class="skills-group-label">PROGRAMMING &amp; TOOLS</span>
+            </div>
+
+            <div class="skills-list skills-list-grid">
+              <span>PYTHON</span>
+              <span>JAVA</span>
+              <span>HTML &amp; CSS</span>
+              <span>JAVASCRIPT</span>
+              <span>PHP</span>
+              <span>MYSQL</span>
+              <span>VISUAL STUDIO CODE</span>
+              <span>ANDROID STUDIO</span>
+            </div>
+          </div>
+
+          <!-- Core Work Skills -->
+          <div class="skills-group">
+            <div class="skills-group-header">
+              <span class="skills-group-number">03</span>
+              <span class="skills-group-label">CORE WORK SKILLS</span>
+            </div>
+
+            <div class="skills-list">
+              <span>TIME MANAGEMENT</span>
+              <span>COMMUNICATION SKILLS</span>
+              <span>DECISION-MAKING</span>
+              <span>INTERPERSONAL SKILLS</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+     PROJECTS
+================================================== -->
+
+      <section class="projects-section" id="projects">
+        <div class="section-header">
+          <span class="section-number">04</span>
+          <span class="section-label">PROJECTS</span>
+        </div>
+
+        <div class="projects-content">
+          <!-- BLIMS -->
+          <article class="project-item">
+            <div class="project-info">
+              <div class="project-index">01</div>
+
+              <div class="project-details">
+                <span class="project-type"
+                  >CAPSTONE PROJECT · OCT 2025 – OCT 2026</span
+                >
+
+                <h2 class="project-title">BLIMS</h2>
+
+                <h3 class="project-name">
+                  Bolosan ES Learners Information Management System
+                </h3>
+
+                <p class="project-description">
+                  A role-based school management system designed to streamline
+                  academic and administrative processes through a unified
+                  digital platform.
+                </p>
+
+                <div class="project-role">
+                  <span>ROLE</span>
+                  <strong>FRONTEND DEVELOPER</strong>
+                </div>
+
+                <div class="project-tech">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JAVASCRIPT</span>
+                  <span>MONGODB</span>
+                  <span>NODE.JS</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-visual">
+              <img
+                src="images/projects/blims/blims.png"
+                alt="BLIMS project interface"
+                loading="lazy"
+              />
+            </div>
+          </article>
+
+          <!-- BIZTRACK -->
+          <article class="project-item">
+            <div class="project-info">
+              <div class="project-index">02</div>
+
+              <div class="project-details">
+                <span class="project-type"
+                  >JUNIOR PROJECT · JUNE 2025 – OCT 2025</span
+                >
+
+                <h2 class="project-title">BIZTRACK</h2>
+
+                <h3 class="project-name">
+                  Small Business Sales and Expense Monitoring System
+                </h3>
+
+                <p class="project-description">
+                  A web-based sales and expense monitoring system designed to
+                  help small businesses digitize financial record-keeping and
+                  improve visibility into their financial performance.
+                </p>
+
+                <div class="project-role">
+                  <span>ROLE</span>
+                  <strong>LEAD DEVELOPER · UI/UX</strong>
+                </div>
+
+                <div class="project-tech">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JAVASCRIPT</span>
+                  <span>PHP</span>
+                  <span>MYSQL</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-visual">
+              <img
+                src="images/projects/biztrack/biztrack.png"
+                alt="BizTrack project interface"
+                loading="lazy"
+              />
+            </div>
+          </article>
+
+          <!-- SUP BREW -->
+          <article class="project-item">
+            <div class="project-info">
+              <div class="project-index">03</div>
+
+              <div class="project-details">
+                <span class="project-type"
+                  >SOPHOMORE PROJECT · NOV 2024 – MAR 2025</span
+                >
+
+                <h2 class="project-title">SUP, BREW?</h2>
+
+                <h3 class="project-name">Coffee Shop Ordering Application</h3>
+
+                <p class="project-description">
+                  A mobile coffee shop ordering application developed as a
+                  sophomore project, focused on creating a simple mobile
+                  ordering experience.
+                </p>
+
+                <div class="project-role">
+                  <span>ROLE</span>
+                  <strong>FRONTEND DEVELOPER</strong>
+                </div>
+
+                <div class="project-tech">
+                  <span>KOTLIN</span>
+                  <span>XML</span>
+                  <span>ANDROID STUDIO</span>
+                  <span>MYSQL</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-visual">
+              <img
+                src="images/projects/supbrew/sup-brew.png"
+                alt="Sup, Brew? mobile application"
+                loading="lazy"
+              />
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- =================================================
+     PROJECT EXPERIENCE
+================================================== -->
+
+      <section class="experience-section" id="experience">
+        <div class="section-header">
+          <span class="section-number">05</span>
+          <span class="section-label">PROJECT EXPERIENCE</span>
+        </div>
+
+        <div class="experience-content">
+          <!-- BLIMS -->
+          <article class="experience-item">
+            <div class="experience-index">01</div>
+
+            <div class="experience-main">
+              <div class="experience-heading">
+                <div>
+                  <span class="experience-type"
+                    >CAPSTONE PROJECT · 2025–2026</span
+                  >
+                  <h2>FRONTEND DEVELOPER</h2>
+                  <h3>BLIMS</h3>
+                </div>
+
+                <span class="experience-number">01</span>
+              </div>
+
+              <p>
+                Developed the frontend interface of a role-based school
+                management system for administrators, teachers, and students.
+                Focused on responsive interfaces, consistent layouts, and
+                reusable UI components across different system modules.
+              </p>
+
+              <div class="experience-skills">
+                <span>WEB DEVELOPMENT</span>
+                <span>UI DESIGN</span>
+                <span>RESPONSIVE DESIGN</span>
+                <span>FRONTEND DEVELOPMENT</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- BIZTRACK -->
+          <article class="experience-item">
+            <div class="experience-index">02</div>
+
+            <div class="experience-main">
+              <div class="experience-heading">
+                <div>
+                  <span class="experience-type">JUNIOR PROJECT · 2025</span>
+                  <h2>LEAD DEVELOPER</h2>
+                  <h3>BIZTRACK</h3>
+                </div>
+
+                <span class="experience-number">02</span>
+              </div>
+
+              <p>
+                Led the development of a sales and expense monitoring system for
+                small business users. Contributed to the system interface,
+                financial features, reporting views, and overall project
+                implementation.
+              </p>
+
+              <div class="experience-skills">
+                <span>WEB DEVELOPMENT</span>
+                <span>UI/UX</span>
+                <span>PHP</span>
+                <span>MYSQL</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- SUP BREW -->
+          <article class="experience-item">
+            <div class="experience-index">03</div>
+
+            <div class="experience-main">
+              <div class="experience-heading">
+                <div>
+                  <span class="experience-type"
+                    >SOPHOMORE PROJECT · 2024–2025</span
+                  >
+                  <h2>FRONTEND DEVELOPER</h2>
+                  <h3>SUP, BREW?</h3>
+                </div>
+
+                <span class="experience-number">03</span>
+              </div>
+
+              <p>
+                Developed the frontend interface of a mobile coffee shop
+                ordering application, focusing on creating a simple and
+                accessible mobile ordering experience.
+              </p>
+
+              <div class="experience-skills">
+                <span>APP DEVELOPMENT</span>
+                <span>UI DESIGN</span>
+                <span>ANDROID</span>
+                <span>FRONTEND DEVELOPMENT</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- =================================================
+     CONTACT
+================================================== -->
+
+      <section class="contact-section" id="contact">
+        <div class="section-header">
+          <span class="section-number">06</span>
+          <span class="section-label">CONTACT</span>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-intro">
+            <span class="contact-kicker">LET'S CONNECT</span>
+
+            <h2>
+              HAVE A PROJECT<br />
+              OR OPPORTUNITY?
+            </h2>
+
+            <p>
+              I'm always open to connecting, discussing ideas, and exploring
+              opportunities to learn, build, and grow through technology.
+            </p>
+          </div>
+
+          <div class="contact-links">
+            <!-- EMAIL -->
+            <a href="mailto:gecr.abalos.up@phinmaed.com" class="contact-link">
+              <span class="contact-link-number">01</span>
+
+              <div class="contact-link-content">
+                <span class="contact-link-label">EMAIL</span>
+                <strong>GECR.ABALOS.UP@PHINMAED.COM</strong>
+              </div>
+
+              <span class="contact-link-arrow">↗</span>
             </a>
 
-        </section>
+            <!-- LINKEDIN -->
+            <a
+              href="https://www.linkedin.com/in/ageormybrylle/"
+              class="contact-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="contact-link-number">02</span>
 
+              <div class="contact-link-content">
+                <span class="contact-link-label">LINKEDIN</span>
+                <strong>AGEORMYBRYLLE</strong>
+              </div>
 
-        <!-- =================================================
-             PLACEHOLDER SECTIONS
-             We'll build these next.
-        ================================================== -->
+              <span class="contact-link-arrow">↗</span>
+            </a>
 
-        <section class="placeholder-section" id="about">
-            <span>02</span>
-            <h2>ABOUT</h2>
-        </section>
+            <!-- GITHUB -->
+            <a
+              href="https://github.com/iM-Brylle"
+              class="contact-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="contact-link-number">03</span>
 
-        <section class="placeholder-section" id="skills">
-            <span>03</span>
-            <h2>SKILLS</h2>
-        </section>
+              <div class="contact-link-content">
+                <span class="contact-link-label">GITHUB</span>
+                <strong>iM-Brylle</strong>
+              </div>
 
-        <section class="placeholder-section" id="projects">
-            <span>04</span>
-            <h2>PROJECTS</h2>
-        </section>
+              <span class="contact-link-arrow">↗</span>
+            </a>
 
-        <section class="placeholder-section" id="experience">
-            <span>05</span>
-            <h2>EXPERIENCE</h2>
-        </section>
+            <!-- CV -->
+            <a
+              href="assets/cv/Geormy-Abalos-CV.pdf"
+              class="contact-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="contact-link-number">04</span>
 
-        <section class="placeholder-section" id="contact">
-            <span>06</span>
-            <h2>CONTACT</h2>
-        </section>
+              <div class="contact-link-content">
+                <span class="contact-link-label">RESUME</span>
+                <strong>DOWNLOAD CV</strong>
+              </div>
 
+              <span class="contact-link-arrow">↓</span>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
-
 
     <!-- Main JavaScript -->
     <script src="js/script.js"></script>
-
-</body>
+  </body>
 </html>
